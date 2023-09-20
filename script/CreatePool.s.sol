@@ -35,7 +35,10 @@ contract CreatePool is Script, Native, Config {
             allowedTokens
         );
 
-        Metadata memory metadata = Metadata({protocol: 1, pointer: "TestPoolMetadataPointer"});
+        Metadata memory metadata = Metadata({
+            protocol: 1,
+            pointer: "bafybeif43xtcb7zfd6lx7rfq42wjvpkbqgoo7qxrczbj4j4iwfl5aaqv2q"
+        });
         address[] memory managers = new address[](1);
         managers[0] = address(OWNER);
 
